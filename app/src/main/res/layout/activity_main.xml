@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Meeting"
+            android:textSize="25sp"
+            android:textColor="@color/black2"
+            android:textAllCaps="true"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/participants_recycler"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:layout_height="200dp"/>
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textbox"
+            android:hint="Select date"
+            android:padding="15dp"
+            android:textColor="@color/black2"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/timeButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textbox"
+            android:hint="Start Time"
+            android:onClick="popTimePicker1"
+            android:padding="15dp"
+            android:textColor="@color/black2"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/timeButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textbox"
+            android:hint="End Time"
+            android:onClick="popTimePicker2"
+            android:padding="15dp"
+            android:textColor="@color/black2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/black2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ok"
+            android:onClick="addToDatabase"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/upcoming"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/transparent"
+            android:text="Upcoming Meetings"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black2" />
+    </LinearLayout>
+
+</LinearLayout>

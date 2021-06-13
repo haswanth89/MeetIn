@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "512113067062",
+    "project_id": "meet-in-77018",
+    "storage_bucket": "meet-in-77018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512113067062:android:a260b89409fb3bce1cc497",
+        "android_client_info": {
+          "package_name": "com.example.meetin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512113067062-i8h161dhu3rnoddujddutifnpl07jed2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJWe9e6b4yRHqEcU2O20BJbG7yBple14A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512113067062-i8h161dhu3rnoddujddutifnpl07jed2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
